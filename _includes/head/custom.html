@@ -1,4 +1,67 @@
 <script>
+  (function () {
+    var lightHref = "{{ '/assets/css/main.css' | relative_url }}";
+    var darkHref = "{{ '/assets/css/main-dark.css' | relative_url }}";
+    var link = document.querySelector('link[rel="stylesheet"][href*="/assets/css/main"]');
+    var stored = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored && stored !== 'auto' ? stored : (prefersDark ? 'dark' : 'light');
+
+    if (link) {
+      link.setAttribute('href', theme === 'dark' ? darkHref : lightHref);
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
+
+    if ((!stored || stored === 'auto') && window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (event) {
+        var next = event.matches ? 'dark' : 'light';
+        if (link) {
+          link.setAttribute('href', next === 'dark' ? darkHref : lightHref);
+        }
+        document.documentElement.setAttribute('data-theme', next);
+      });
+    }
+  })();
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var button = document.getElementById('theme-toggle');
+    if (!button) {
+      return;
+    }
+
+    var setTheme = function (choice) {
+      var link = document.querySelector('link[rel="stylesheet"][href*="/assets/css/main"]');
+      var lightHref = "{{ '/assets/css/main.css' | relative_url }}";
+      var darkHref = "{{ '/assets/css/main-dark.css' | relative_url }}";
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = choice === 'auto' ? (prefersDark ? 'dark' : 'light') : choice;
+      if (link) {
+        link.setAttribute('href', next === 'dark' ? darkHref : lightHref);
+      }
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', choice);
+    };
+
+    var updateLabel = function (theme) {
+      var isDark = theme === 'dark';
+      button.setAttribute('aria-pressed', isDark);
+      button.textContent = isDark ? 'Light mode' : 'Dark mode';
+    };
+
+    updateLabel(document.documentElement.getAttribute('data-theme') || 'light');
+
+    button.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme') || 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+      updateLabel(next);
+    });
+  });
+</script>
+
+<script>
   window.MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],

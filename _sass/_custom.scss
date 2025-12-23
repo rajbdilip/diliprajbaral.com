@@ -40,3 +40,18 @@
 .page__related-title {
   margin-block: 1.5rem 1rem;
 }
+
+.theme-toggle {
+  margin-top: 1rem;
+}
+
+.theme-toggle__button {
+  border: 1px solid #b6b6b6;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: transparent;
+  color: inherit;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
