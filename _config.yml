@@ -1,0 +1,9 @@
+title: Dilip Raj Baral
+description: Software engineering notes, lessons, and opinions.
+url: "https://diliprajbaral.com"
+baseurl: ""
+permalink: /blog/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

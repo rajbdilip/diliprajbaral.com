@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+      <a href="{{ "/about/" | relative_url }}">About</a> ·
+      <a href="{{ "/blog/" | relative_url }}">Blog</a>
+    </nav>
+    <hr>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <hr>
+    <p>© {{ site.time | date: "%Y" }} Dilip Raj Baral</p>
+  </footer>
+</body>
+</html>
