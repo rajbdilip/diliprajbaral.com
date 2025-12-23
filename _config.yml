@@ -39,6 +39,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
 locale: "en"
+google_analytics: G-BQTLT1DFDB
 comments:
   provider: "disqus"
   disqus:
