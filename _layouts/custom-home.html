@@ -35,7 +35,7 @@ layout: default
             </h3>
             <div class="entry__meta entry__inline-group">
               <time datetime="{{ post.date | date_to_xmlschema }}">
-                <a href="{{ post.url | relative_url }}" rel="bookmark">{{ post.date | date: "%b %-d, %Y" }}</a>
+                {{ post.date | date: "%b %-d, %Y" }}
               </time>
               <span>~</span>
               {% assign words_per_minute = post.words_per_minute | default: site.words_per_minute | default: 200 %}
