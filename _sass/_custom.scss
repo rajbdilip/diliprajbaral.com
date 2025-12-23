@@ -50,6 +50,8 @@ $site-gutter: 1em !default;
 .page__comments {
   margin-inline: auto;
   max-width: 65ch;
+  width: 100%;
+  float: none;
 }
 
 .page__comments #disqus_thread {
