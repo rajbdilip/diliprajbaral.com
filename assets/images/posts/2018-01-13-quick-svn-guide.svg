@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of branching lines and a terminal window for a Subversion guide">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f8fb"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Soft grid -->
+  <g opacity="0.25" stroke="#cfd8e3" stroke-width="1">
+    <path d="M80 140H1520"/>
+    <path d="M80 240H1520"/>
+    <path d="M80 340H1520"/>
+    <path d="M80 440H1520"/>
+    <path d="M80 540H1520"/>
+    <path d="M80 640H1520"/>
+    <path d="M80 740H1520"/>
+  </g>
+
+  <!-- Branching lines -->
+  <g fill="none" stroke-linecap="round" stroke-width="12">
+    <path d="M260 620 C420 620, 520 540, 640 540" stroke="#93c5fd"/>
+    <path d="M260 620 C420 620, 520 700, 640 700" stroke="#bfdbfe"/>
+    <path d="M640 540 C760 540, 860 460, 980 460" stroke="#60a5fa"/>
+    <path d="M640 700 C760 700, 860 620, 980 620" stroke="#3b82f6"/>
+    <path d="M980 460 C1120 460, 1240 520, 1360 520" stroke="#93c5fd"/>
+    <path d="M980 620 C1120 620, 1240 680, 1360 680" stroke="#bfdbfe"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <circle cx="260" cy="620" r="16" fill="#3b82f6"/>
+    <circle cx="640" cy="540" r="14" fill="#60a5fa"/>
+    <circle cx="640" cy="700" r="14" fill="#60a5fa"/>
+    <circle cx="980" cy="460" r="12" fill="#3b82f6"/>
+    <circle cx="980" cy="620" r="12" fill="#3b82f6"/>
+    <circle cx="1360" cy="520" r="10" fill="#60a5fa"/>
+    <circle cx="1360" cy="680" r="10" fill="#60a5fa"/>
+  </g>
+
+  <!-- Terminal window -->
+  <g transform="translate(180 170)">
+    <rect x="0" y="0" width="700" height="300" rx="16" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <rect x="0" y="0" width="700" height="42" rx="16" fill="#f3f6fb"/>
+    <circle cx="26" cy="21" r="6" fill="#ff6b6b"/>
+    <circle cx="48" cy="21" r="6" fill="#ffd93d"/>
+    <circle cx="70" cy="21" r="6" fill="#6bcb77"/>
+    <text x="36" y="94" font-family="Menlo, Consolas, monospace" font-size="18" fill="#2b3a55">$ svn checkout https://mysvnrepo.com/myrepo/trunk</text>
+    <text x="36" y="118" font-family="Menlo, Consolas, monospace" font-size="18" fill="#2b3a55">  .</text>
+    <text x="36" y="156" font-family="Menlo, Consolas, monospace" font-size="18" fill="#2b3a55">$ svn copy trunk branches/feature -m "Message"</text>
+    <text x="36" y="194" font-family="Menlo, Consolas, monospace" font-size="18" fill="#2b3a55">$ svn switch https://mysvnrepo.com/myrepo/branches/feature</text>
+    <text x="36" y="232" font-family="Menlo, Consolas, monospace" font-size="18" fill="#2b3a55">$ svn merge https://mysvnrepo.com/myrepo/branches/feature</text>
+  </g>
+
+  <!-- SVN badge -->
+  <g transform="translate(1040 170)">
+    <rect x="0" y="0" width="300" height="120" rx="18" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <rect x="20" y="24" width="76" height="72" rx="14" fill="url(#accent)"/>
+    <text x="58" y="70" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="28" fill="#ffffff">SVN</text>
+    <text x="118" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#2b3a55">Subversion</text>
+    <text x="118" y="92" font-family="Arial, sans-serif" font-size="16" fill="#64748b">for Git users</text>
+  </g>
+</svg>

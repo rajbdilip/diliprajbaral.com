@@ -15,6 +15,9 @@ tags:
   - sdk
   - permissions
   - oauth
+header:
+  image: /assets/images/posts/2014-07-16-facebook-php-sdk.svg
+  teaser: /assets/images/posts/2014-07-16-facebook-php-sdk.svg
 ---
 **UPDATE:**
 

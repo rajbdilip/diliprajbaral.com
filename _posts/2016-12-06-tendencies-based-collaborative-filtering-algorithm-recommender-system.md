@@ -15,6 +15,9 @@ tags:
   - machine-learning
   - algorithm
 mathjax: true
+header:
+  image: /assets/images/posts/2016-12-06-tendencies-based.svg
+  teaser: /assets/images/posts/2016-12-06-tendencies-based.svg
 ---
 As part of my academic research project titled *Impact of Recommender System*, I got to study various collaborative filtering algorithms. I was supposed to study, implement, and compare them. Tendencies-based was the best among them in terms of accuracy and computational efficiency. It was proposed by Fidel Cacheda and his team of researchers from University of A Coruna in their paper titled ***Comparison of Collaborative Filtering Algorithms: Limitations of Current Techniques and Proposals for Scalable, High-Performance Recommender Systems.*** It was as accurate as other collaborative filtering algorithms like item-based, similarity fusion, and others, if not more accurate than them. It was the most computationally efficient.
 

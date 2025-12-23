@@ -15,6 +15,9 @@ tags:
   - topic-modeling
   - nlp
   - machine-learning
+header:
+  image: /assets/images/posts/2017-06-04-topic-modelling-lda-mallet.svg
+  teaser: /assets/images/posts/2017-06-04-topic-modelling-lda-mallet.svg
 ---
 Machine Learning for Language Toolkit, in short MALLET, is a tool written in Java for applications of machine learning such as natural language processing, document classification, clustering, topic modeling, and information extraction to texts. To learn what MALLET has to offer in detail, [visit this page](http://mallet.cs.umass.edu/index.php).
 

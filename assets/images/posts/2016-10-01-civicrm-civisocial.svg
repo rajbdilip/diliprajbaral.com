@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of CiviCRM connected to social networks">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f8fb"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="crm" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Central CiviCRM hub -->
+  <g transform="translate(620 300)">
+    <circle cx="180" cy="150" r="140" fill="url(#crm)"/>
+    <text x="180" y="150" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="36" fill="#ffffff">CiviCRM</text>
+    <text x="180" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffe4e6">CiviSocial</text>
+  </g>
+
+  <!-- Social nodes -->
+  <g font-family="Arial Black, Arial, sans-serif" font-size="28" text-anchor="middle" fill="#ffffff">
+    <!-- Facebook -->
+    <g transform="translate(220 240)">
+      <circle cx="120" cy="120" r="90" fill="#1877f2"/>
+      <text x="120" y="132">f</text>
+    </g>
+    <!-- Google -->
+    <g transform="translate(1200 210)">
+      <circle cx="120" cy="120" r="90" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+      <text x="120" y="132" fill="#ea4335">G</text>
+    </g>
+    <!-- Twitter -->
+    <g transform="translate(1180 560)">
+      <circle cx="120" cy="120" r="90" fill="#1d9bf0"/>
+      <text x="120" y="132">t</text>
+    </g>
+  </g>
+
+  <!-- Connectors -->
+  <g stroke="#94a3b8" stroke-width="4" stroke-dasharray="8 10" fill="none">
+    <path d="M460 360 C560 340, 620 360, 740 420"/>
+    <path d="M1220 360 C1080 360, 980 380, 860 430"/>
+    <path d="M1220 700 C1080 660, 980 600, 860 520"/>
+  </g>
+
+  <!-- Integration banner -->
+  <g transform="translate(180 700)">
+    <rect x="0" y="0" width="520" height="120" rx="18" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <rect x="20" y="26" width="72" height="72" rx="12" fill="#111827"/>
+    <text x="56" y="70" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="22" fill="#ffffff">API</text>
+    <text x="116" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#1f2937">Social Integration</text>
+    <text x="116" y="88" font-family="Arial, sans-serif" font-size="16" fill="#64748b">Login, events, and activity sync</text>
+  </g>
+</svg>

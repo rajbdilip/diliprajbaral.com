@@ -1,13 +1,13 @@
 ---
-layout: single
+layout: archive
 title: Blog
 permalink: /blog/
+entries_layout: grid
+collection: posts
+sidebar: false
 ---
-<ul>
-{% for post in site.posts %}
-<li>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  <small> - {{ post.date | date: "%b %-d, %Y" }}</small>
-</li>
-{% endfor %}
-</ul>
+Latest posts and essays.
+
+<div class="grid__wrapper">
+{% include documents-collection.html collection='posts' sort_by='date' sort_order='reverse' type='grid' %}
+</div>

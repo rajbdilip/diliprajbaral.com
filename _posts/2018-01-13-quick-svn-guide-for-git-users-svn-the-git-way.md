@@ -15,6 +15,9 @@ tags:
   - git
   - version-control
   - workflow
+header:
+  image: /assets/images/posts/2018-01-13-quick-svn-guide.svg
+  teaser: /assets/images/posts/2018-01-13-quick-svn-guide.svg
 ---
 Why would a Git user want to switch to SVN, you ask?
 

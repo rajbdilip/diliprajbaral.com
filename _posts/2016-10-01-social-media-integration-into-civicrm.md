@@ -15,6 +15,9 @@ tags:
   - social-media
   - integration
   - crm
+header:
+  image: /assets/images/posts/2016-10-01-civicrm-civisocial.svg
+  teaser: /assets/images/posts/2016-10-01-civicrm-civisocial.svg
 ---
 So my proposal for [Google Summer of Code](https://developers.google.com/open-source/gsoc/) 2016 was accepted and I was one of the 1206 Google student developers all around the globe. I got a chance to work on [CiviCRM](https://en.wikipedia.org/wiki/CiviCRM) alongside its developers from all around the world. CiviCRM is a web-based, open source constituency relationship management specifically designed for the needs of non-profit, non-governmental, and advocacy groups, and serves as an association management system. Volunteers, activists, voters as well as more general sorts of business contacts such as employees, clients, or vendors can be managed using CiviCRM.
 

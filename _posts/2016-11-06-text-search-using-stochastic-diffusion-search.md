@@ -15,6 +15,9 @@ tags:
   - optimization
   - java
   - algorithms
+header:
+  image: /assets/images/posts/2016-11-06-stochastic-diffusion-search.svg
+  teaser: /assets/images/posts/2016-11-06-stochastic-diffusion-search.svg
 ---
 Stochastic Diffusion Search (SDS), a multi-agent population-based global search and optimization algorithm, is a distributed mode of computation utilizing interaction between simple agents. SDS shows off a strong mathematical framework. It is robust, has minimal convergence criteria and linear time complexity.
 

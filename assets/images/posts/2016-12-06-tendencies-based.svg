@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of tendencies-based recommender system with ratings matrix">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f8fb"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Ratings matrix -->
+  <g transform="translate(160 170)">
+    <rect x="0" y="0" width="640" height="520" rx="18" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <rect x="30" y="40" width="200" height="14" rx="7" fill="#cbd5e1"/>
+    <g fill="#e2e8f0">
+      <rect x="30" y="90" width="560" height="12" rx="6"/>
+      <rect x="30" y="120" width="560" height="12" rx="6"/>
+      <rect x="30" y="150" width="560" height="12" rx="6"/>
+      <rect x="30" y="180" width="560" height="12" rx="6"/>
+      <rect x="30" y="210" width="560" height="12" rx="6"/>
+      <rect x="30" y="240" width="560" height="12" rx="6"/>
+      <rect x="30" y="270" width="560" height="12" rx="6"/>
+      <rect x="30" y="300" width="560" height="12" rx="6"/>
+    </g>
+    <g fill="url(#accent)">
+      <circle cx="130" cy="96" r="6"/>
+      <circle cx="220" cy="126" r="6"/>
+      <circle cx="310" cy="156" r="6"/>
+      <circle cx="400" cy="186" r="6"/>
+      <circle cx="480" cy="216" r="6"/>
+      <circle cx="220" cy="246" r="6"/>
+      <circle cx="360" cy="276" r="6"/>
+      <circle cx="520" cy="306" r="6"/>
+    </g>
+  </g>
+
+  <!-- Formula card -->
+  <g transform="translate(920 200)">
+    <rect x="0" y="0" width="520" height="220" rx="18" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <text x="30" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#111827">Prediction</text>
+    <text x="30" y="120" font-family="Menlo, Consolas, monospace" font-size="20" fill="#334155">r_hat = mu_u + mu_i + beta(tau_u + tau_i)</text>
+    <rect x="30" y="150" width="300" height="10" rx="5" fill="#e2e8f0"/>
+  </g>
+
+  <!-- Trend arrows -->
+  <g stroke="#94a3b8" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M900 520 C1020 480, 1120 460, 1220 460"/>
+    <path d="M900 560 C1020 600, 1120 620, 1220 640"/>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(980 640)">
+    <rect x="0" y="0" width="420" height="120" rx="18" fill="#ffffff" stroke="#dbe4ee" stroke-width="2"/>
+    <rect x="20" y="24" width="72" height="72" rx="12" fill="#111827"/>
+    <text x="56" y="70" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="22" fill="#ffffff">CF</text>
+    <text x="116" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#1f2937">Recommender</text>
+    <text x="116" y="88" font-family="Arial, sans-serif" font-size="16" fill="#64748b">Tendencies-based</text>
+  </g>
+</svg>

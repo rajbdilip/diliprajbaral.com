@@ -10,6 +10,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 name: Dilip Raj Baral
 mathjax: true
+show_excerpts: true
 author:
   name: Dilip Raj Baral
   bio: Software engineer writing about systems, development, and lessons learned.
