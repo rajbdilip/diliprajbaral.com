@@ -9,10 +9,7 @@
 <body>
   <header>
     <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-      <a href="{{ "/about/" | relative_url }}">About</a> ·
-      <a href="{{ "/blog/" | relative_url }}">Blog</a>
-    </nav>
+    {% include navigation.html %}
     <hr>
   </header>
   <main>
