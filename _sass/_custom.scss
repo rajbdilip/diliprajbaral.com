@@ -17,5 +17,26 @@
   display: block;
   width: 100%;
   max-width: 65ch;
+  margin-block: 2.5rem;
   margin-inline: auto;
+}
+
+.layout--single .page__meta {
+  margin-block: 0.75rem;
+}
+
+@media (min-width: 64em) {
+  .page__related {
+    float: none;
+    width: 100%;
+  }
+}
+
+.page__related {
+  margin-inline: auto;
+  max-width: 65ch;
+}
+
+.page__related-title {
+  margin-block: 1.5rem 1rem;
 }
