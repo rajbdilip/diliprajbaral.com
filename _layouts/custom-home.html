@@ -15,31 +15,15 @@ layout: default
         {% assign teaser = post.header.teaser | default: post.header.image %}
         <li class="entry__list-item">
           <article class="entry">
-            <h3 class="entry__title">
-              <a class="entry__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h3>
-            <div class="entry__meta entry__inline-group">
-              <time datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%b %-d, %Y" }}
-              </time>
-              <span>~</span>
-              {% assign words_per_minute = post.words_per_minute | default: site.words_per_minute | default: 200 %}
-              {% assign words = post.content | strip_html | number_of_words %}
-              <span>
-                {% if words < words_per_minute %}
-                  Read in 1 min
-                {% elsif words == words_per_minute %}
-                  Read in 1 min
-                {% else %}
-                  Read in {{ words | divided_by: words_per_minute }} mins
-                {% endif %}
-              </span>
-            </div>
             {% if teaser %}
             <div class="entry__image">
               <img alt="" class="img--th-list" loading="lazy" src="{{ teaser | relative_url }}">
             </div>
             {% endif %}
+            <h3 class="entry__title">
+              <a class="entry__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            {% include page__meta.html type="grid" %}
             <div class="entry__excerpt prose">
               <div class="prose">{{ post.excerpt | strip_html | truncate: 160 }}</div>
             </div>

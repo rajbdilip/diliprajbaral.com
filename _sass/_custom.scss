@@ -218,8 +218,33 @@ $hero-background-color: $background-color !default;
   margin-bottom: 2.5rem;
 }
 
+.entry__list-item .entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry__list-item .entry__image {
+  order: 0;
+}
+
+.entry__list-item .entry__title {
+  order: 1;
+}
+
+.entry__list-item .page__meta {
+  order: 2;
+}
+
+.entry__list-item .entry__excerpt {
+  order: 3;
+}
+
 .entry__title {
   margin-bottom: 0.5rem;
+}
+
+.layout--custom-home .entry__title {
+  margin-top: 1rem;
 }
 
 .page__content h2 a,
@@ -237,16 +262,24 @@ $hero-background-color: $background-color !default;
   text-decoration: underline;
 }
 
-.entry__meta {
+.layout--custom-home .page__meta {
+  margin: 0.35rem 0;
+  font-size: 0.7em;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.75em;
-  color: $muted-text-color;
+  white-space: nowrap;
 }
 
-.entry__image {
-  margin: 0.75rem 0 0.5rem;
+.layout--custom-home .page__meta-sep {
+  display: inline;
+}
+
+.layout--custom-home .page__meta-sep::before {
+  display: inline;
+}
+
+.layout--custom-home .entry__list .entry__image {
+  margin: 0.75rem 0 0.1rem !important;
 }
 
 .entry__image .img--th-list {
